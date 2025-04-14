@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+.inter-italic-black {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: italic;
+}
+
 
 body {
     font-family: 'Inter', sans-serif;
@@ -16,10 +22,11 @@ body {
     background-color: #030923;
     width: 1728px;
     height: 1117px;
-    padding: 35px 75px;
+    padding: 55px 75px;
   }
 h1{
-font-size: 30px;
+  font-size: 150px;
+  font-weight: 800;
 }
   .cabecera{
     display: flex;
@@ -39,16 +46,13 @@ font-size: 30px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-weight: 800;
-    font-style: italic;
+    font-size: 30px;
 }
 
-.logo h1:nth-child(1){
+.logo p:nth-child(1){
     color: #505DFF;
-    font-weight: 900;
     font-size: 32px;
 }
-
 
   .opciones_menu{
     display: flex;
@@ -62,13 +66,19 @@ font-size: 30px;
     display: flex;
     align-items: center;
     font-size: 20px;
-    font-weight: 500;
     padding: 15px 43px;
     background-color: white;
     color: #030923;
-    font-weight: 600;
     border-radius: 50px;
     height: 55px;
+    width: fit-content;
+  }
+
+  .inter-roman-semibold{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
   }
 
   .botones{
@@ -76,6 +86,7 @@ font-size: 30px;
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
   }
 
   .botones ul{
@@ -113,3 +124,103 @@ font-size: 30px;
   .direcciones li:nth-child(2){
     background-image: url(./img/flecha.png);
   }
+
+  .abajo{
+    width: 65px;
+    height: 60px;
+    background:
+    url(./img/flecha.png),
+    linear-gradient(270deg, #727584, #030923); 
+    transform: rotate(90deg);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -9999px; 
+    border-radius: 53px;
+    padding: 0px;      
+}
+
+.contenido{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contenido ul{
+  list-style: none;
+}
+.contenido1{
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.texto{
+  width: 607px;
+  height: 260px;
+  text-transform: uppercase;
+}
+
+.texto li:nth-child(1){
+  display: flex;
+  justify-content: flex-end;
+}
+
+.texto li:nth-child(3){
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.botones_texto{
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
+.botones_texto li{
+  height: 600px;
+  width: 200px;
+  background-color: rgba(255,255,255,0.15);
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.botones_texto li:nth-child(2) p{
+  display: block;
+  background: url(./img/telefono.png),
+  white;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  text-indent: -9999px;
+}
+
+.imagen{
+  width: 821px;
+  height: 821px;
+  position: relative;
+}
+
+.imagen img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0%, 0%);
+}
+
+.imagen p{
+  position: absolute;
+  width: 475.61px;
+  height: 721.57px;
+  background-color: #505DFF;
+  border-radius: 100%;
+  transform: rotate(-43.86deg);
+  filter: blur(175px);
+  transform: translate(50%, 15%);
+}
+
